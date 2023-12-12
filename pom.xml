@@ -8,11 +8,11 @@
         <version>3.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.spring3.oauth.jwt</groupId>
-    <artifactId>oauth-jwt</artifactId>
+    <groupId>com.pc.iam</groupId>
+    <artifactId>iam</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>oauth-jwt</name>
-    <description>Demo project for Spring Boot</description>
+    <name>iam</name>
+    <description>IAM service in Spring Boot</description>
     <properties>
         <java.version>17</java.version>
     </properties>
