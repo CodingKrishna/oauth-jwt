@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 import java.time.Instant;
 
 /**
- * @author mhmdz
- * Created By Zeeshan on 20-05-2023
+ * @author codingkrishna
  * @project oauth-jwt
  */
 

@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 /**
- * @author mhmdz
- * Created By Zeeshan on 20-05-2023
+ * @author codingkrishna
  * @project oauth-jwt
  */
 @Repository

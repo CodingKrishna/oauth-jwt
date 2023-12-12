@@ -19,8 +19,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
- * @author mhmdz
- * Created By Zeeshan on 20-05-2023
+ * @author codingkrishna
  * @project oauth-jwt
  */
 @Configuration
