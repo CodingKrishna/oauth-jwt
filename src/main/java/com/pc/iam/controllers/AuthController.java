@@ -4,9 +4,10 @@ import com.pc.iam.dtos.AuthRequestDTO;
 import com.pc.iam.dtos.RefreshTokenRequestDTO;
 import com.pc.iam.dtos.UserResponse;
 import com.pc.iam.helpers.UserDetailsServiceImpl;
+import com.pc.iam.services.DeviceService;
 import com.pc.iam.services.JwtService;
 import com.pc.iam.dtos.JwtResponseDTO;
-import com.pc.iam.models.RefreshToken;
+import com.pc.iam.entities.RefreshToken;
 import com.pc.iam.services.RefreshTokenService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -43,6 +44,9 @@ public class AuthController {
     @Autowired
     RefreshTokenService refreshTokenService;
 
+    @Autowired
+    DeviceService deviceService;
+
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     @GetMapping("/test")
     public String test() {
@@ -54,10 +58,13 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public JwtResponseDTO AuthenticateAndGetToken(@RequestBody AuthRequestDTO authRequestDTO){
+    public JwtResponseDTO AuthenticateAndGetToken(@RequestBody AuthRequestDTO authRequestDTO,
+                                                  final HttpServletRequest request){
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequestDTO.getUsername(), authRequestDTO.getPassword()));
         if(authentication.isAuthenticated()){
             RefreshToken refreshToken = refreshTokenService.createRefreshToken(authRequestDTO.getUsername());
+
+            //deviceService.addUserLocation(authRequestDTO, request);
             return JwtResponseDTO.builder()
                     .accessToken(jwtService.GenerateToken(authRequestDTO.getUsername()))
                     .refreshToken(refreshToken.getToken()).build();

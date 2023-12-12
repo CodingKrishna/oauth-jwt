@@ -3,7 +3,7 @@ package com.pc.iam.services;
 import com.pc.iam.dtos.UserRequest;
 import com.pc.iam.dtos.UserResponse;
 import com.pc.iam.repositories.UserRepository;
-import com.pc.iam.models.UserInfo;
+import com.pc.iam.entities.UserInfo;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.pc.iam.repositories;
 
 import com.pc.iam.helpers.RefreshableCRUDRepository;
-import com.pc.iam.models.RefreshToken;
+import com.pc.iam.entities.RefreshToken;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;

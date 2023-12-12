@@ -1,11 +1,11 @@
 package com.pc.iam.helpers;
 
 
-import com.pc.iam.models.UserInfo;
+import com.pc.iam.entities.UserInfo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.pc.iam.models.UserRole;
+import com.pc.iam.entities.UserRole;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package com.pc.iam.models;
+package com.pc.iam.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
 package com.pc.iam.services;
 
-import com.pc.iam.models.RefreshToken;
+import com.pc.iam.entities.RefreshToken;
 import com.pc.iam.repositories.RefreshTokenRepository;
 import com.pc.iam.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

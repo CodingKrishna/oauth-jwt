@@ -1,6 +1,6 @@
 package com.pc.iam.dtos;
 
-import com.pc.iam.models.UserRole;
+import com.pc.iam.entities.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
 package com.pc.iam.repositories;
 
 import com.pc.iam.helpers.RefreshableCRUDRepository;
-import com.pc.iam.models.UserInfo;
+import com.pc.iam.entities.UserInfo;
 import org.springframework.stereotype.Repository;
 
 

@@ -1,4 +1,4 @@
-package com.pc.iam.models;
+package com.pc.iam.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

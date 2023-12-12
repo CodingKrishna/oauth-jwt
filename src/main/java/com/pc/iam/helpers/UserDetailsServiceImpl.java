@@ -1,6 +1,6 @@
 package com.pc.iam.helpers;
 
-import com.pc.iam.models.UserInfo;
+import com.pc.iam.entities.UserInfo;
 import com.pc.iam.repositories.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
